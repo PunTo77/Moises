@@ -44,8 +44,7 @@ public class Client {
                 getNom() +
                 " (" + getNif() + ")\n";
         for (Lloguer lloguer: lloguers) {
-        	 double quantitat = quantitatPerLloguer(lloguer);
-        
+        	 double quantitat = Lloguer.quantitatPerLloguer(lloguer)
         	/*double quantitat = 0;
             switch (lloguer.getVehicle().getCategoria()) {
                 case Vehicle.BASIC:
@@ -89,7 +88,7 @@ public class Client {
         return resultat;
     }
     
-    public double quantitatPerLloguer(Lloguer lloguer) {
+    /*public double quantitatPerLloguer(Lloguer lloguer) {
     	double quantitat = 0;
         switch (lloguer.getVehicle().getCategoria()) {
             case Vehicle.BASIC:
@@ -107,7 +106,7 @@ public class Client {
             case Vehicle.LUXE:
                 quantitat += lloguer.getDies() * 6;
                 break;
-        }
+        }*/
 		return quantitat;
     }
 }
