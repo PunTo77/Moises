@@ -44,7 +44,7 @@ public class Client {
                 getNom() +
                 " (" + getNif() + ")\n";
         for (Lloguer lloguer: lloguers) {
-        	 double quantitat = Lloguer.quantitatPerLloguer(lloguer);
+        	double quantitat = lloguer.quantitat();
         	/*double quantitat = 0;
             switch (lloguer.getVehicle().getCategoria()) {
                 case Vehicle.BASIC:
